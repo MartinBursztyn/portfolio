@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — Martin Bursztyn</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#home">MB</a>
+      <button class="nav-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-list">
+        <li><a class="nav-link active" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#habilidades">Habilidades</a></li>
+        <li><a class="nav-link" href="#metodologia">Metodología</a></li>
+        <li><a class="nav-link" href="#trabajos">Proyectos</a></li>
+        <li><a class="nav-link" href="#contacto">Contactame</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <img class="deco deco-left" src="assets/laptop-outline.svg" alt="">
+    <img class="deco deco-right" src="assets/brain-outline.svg" alt="">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Hola soy <br class="br-xl"><span class="accent">Martin Bursztyn</span></h1>
+        <p>
+          Me formé en la escuela técnica ORT sede Belgrano durante el secundario
+          y estaré estudiando Ingeniería en Inteligencia Artificial en la
+          Universidad de San Andrés.
+        </p>
+        <div class="logos">
+          <img src="assets/logo-ort.png" alt="ORT Argentina" />
+          <img src="assets/logo-udesa.png" alt="Universidad de San Andrés" />
+        </div>
+        <div class="ai-badge"><img src="assets/ai-logo.png" alt="AI" /></div>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/martin.png" alt="Foto de Martin" />
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section id="habilidades" class="skills">
+    <div class="container skills-grid">
+      <div class="skills-summary">
+        <p>
+          Soy desarrollador Back-End con enfoque en Inteligencia Artificial, orientado a crear soluciones eficientes y automatizadas.
+          Tengo experiencia en el diseño de APIs escalables, modelos de machine learning y optimización de datos.
+          Trabajo con Python, JavaScript y SQL, usando frameworks como FastAPI y Node.js, además de bibliotecas como scikit-learn,
+          TensorFlow y PyTorch para el desarrollo de sistemas inteligentes.
+        </p>
+      </div>
+      <div class="skills-panels">
+        <div class="panel">
+          <div class="panel-head">Back-End</div>
+          <div class="panel-body">
+            <ul class="icon-col">
+              <li><img src="assets/icons/python.png" alt="Python"></li>
+              <li><img src="assets/icons/fastapi.png" alt="FastAPI"></li>
+              <li><img src="assets/icons/javascript.png" alt="JavaScript"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="v-divider"></div>
+        <div class="panel">
+          <div class="panel-head">AI</div>
+          <div class="panel-body">
+            <ul class="icon-col">
+              <li><img src="assets/icons/sklearn.png" alt="scikit-learn"></li>
+              <li><img src="assets/icons/pytorch.png" alt="PyTorch"></li>
+              <li><img src="assets/icons/jupyter.png" alt="Jupyter"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METODOLOGÍA / SERVICIOS -->
+  <section id="metodologia" class="services">
+    <div class="container services-grid">
+      <div class="services-left">
+        <h2>Mis servicios</h2>
+        <div class="service-row">
+          <img class="service-img" src="assets/backend.png" alt="Back-end" />
+          <div class="service-card">
+            <p>Desarrollo completo del Back-end en proyectos. Desde la creación de la base de datos hasta el flujo de los mismos en todo el proyecto.</p>
+          </div>
+        </div>
+        <div class="service-row">
+          <img class="service-img" src="assets/ai.png" alt="AI" />
+          <div class="service-card dark">
+            <p>Automatización de procesos e implementación de AI o análisis de datos.</p>
+          </div>
+        </div>
+        <img class="svc-deco pie" src="assets/pie-outline.svg" alt="" />
+        <img class="svc-deco bars" src="assets/bars-outline.svg" alt="" />
+      </div>
+
+      <div class="services-right">
+        <h2>WorkFlow</h2>
+        <ol class="timeline">
+          <li class="tl-step">
+            <span class="tl-num">01</span><span class="tl-line"></span><span class="tl-dot"></span><span class="tl-label">Análisis de problema</span>
+          </li>
+          <li class="tl-step">
+            <span class="tl-num">02</span><span class="tl-line"></span><span class="tl-dot"></span><span class="tl-label">Diagramación de Solución</span>
+          </li>
+          <li class="tl-step">
+            <span class="tl-num">03</span><span class="tl-line"></span><span class="tl-dot"></span><span class="tl-label">Desarrollo de Solución</span>
+          </li>
+          <li class="tl-step">
+            <span class="tl-num">04</span><span class="tl-line"></span><span class="tl-dot"></span><span class="tl-label">Evaluación de efectividad</span>
+          </li>
+          <li class="tl-end">Completado</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS PROPIOS -->
+  <section id="trabajos" class="projects">
+    <div class="container">
+      <h2 class="projects-title">Proyectos Propios</h2>
+      <div class="projects-grid">
+        <a class="project-card" href="#" target="_blank" rel="noreferrer">
+          <div class="project-thumb">
+            <img src="assets/projects/studdy-buddy.png" alt="Studdy Buddy">
+          </div>
+          <h3 class="project-name">Studdy Buddy</h3>
+        </a>
+        <a class="project-card" href="#" target="_blank" rel="noreferrer">
+          <div class="project-thumb">
+            <img src="assets/projects/sima.png" alt="SIMA">
+          </div>
+          <h3 class="project-name">SIMA</h3>
+        </a>
+        <a class="project-card" href="#" target="_blank" rel="noreferrer">
+          <div class="project-thumb">
+            <img src="assets/projects/fisa.png" alt="FISA">
+          </div>
+          <h3 class="project-name">FISA</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="contact">
+    <div class="container contact-grid">
+      <div class="contact-left">
+        <h2>Conectemos</h2>
+
+        <a class="c-item" href="mailto:martinburs07@gmail.com">
+          <img class="c-icon" src="assets/gmail.svg" alt="Gmail">
+          <span class="c-text">martinburs07@gmail.com</span>
+        </a>
+
+        <a class="c-item" href="https://www.linkedin.com/in/martin-bursztyn" target="_blank" rel="noreferrer">
+          <img class="c-icon" src="assets/linkedin.svg" alt="LinkedIn">
+          <span class="c-text">Martín Bursztyn</span>
+        </a>
+      </div>
+
+      <div class="contact-right">
+        <h2>Mandame un Mensaje</h2>
+        <form id="contact-form" class="c-form">
+          <div class="c-row">
+            <input class="c-field" type="text" name="nombre" placeholder="Nombre" required>
+            <input class="c-field" type="text" name="apellido" placeholder="Apellido" required>
+          </div>
+          <textarea class="c-field c-area" name="mensaje" rows="5" placeholder="Mensaje" required></textarea>
+          <button class="c-btn" type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
